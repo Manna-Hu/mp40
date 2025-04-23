@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>zodmp40</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fddb92, #d1fdff);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .top-title {
+      font-size: 32px;
+      color: #4b0082;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 4px #00000033;
+    }
+
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .name-box {
+      background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+      border-radius: 18px;
+      padding: 50px 70px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .name-box:hover {
+      transform: scale(1.08);
+      background: linear-gradient(to bottom, #a18cd1, #fbc2eb);
+      color: #000;
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .info-box {
+      margin-top: 50px;
+      font-size: 30px;
+      font-weight: 900;
+      color: #222;
+      background: #fff4e6;
+      padding: 25px 40px;
+      border-radius: 15px;
+      display: inline-block;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="top-title">Click on the name and know about him...</h1>
+
+  <div class="box-container">
+    <div class="name-box" onclick="showInfo('Ami Mizanur. Ami Baeenchod Pro')">Mizanur</div>
+    <div class="name-box" onclick="showInfo('Ami Muhib. Ami pandruu gang er neta')">Muhib</div>
+    <div class="name-box" onclick="showInfo('Ami Manna. Amar moto valo manus hoy e na')">Manna</div>
+    <div class="name-box" onclick="showInfo('Ami Sefuda. Amar best friend Muhib')">Sefuda</div>
+    <div class="name-box" onclick="showInfo('Ami Naim. Ami Jaura Note 9 pro')">Naim</div>
+    <div class="name-box" onclick="showInfo('Ami Tushar. Ami valo chele.')">Tushar</div>
+    <div class="name-box" onclick="showInfo('Ami Soyeb. Ami valo chele.')">Soyeb</div>
+    <div class="name-box" onclick="showInfo('Ami Mehedi. Ami valo chele.')">Mehedi</div>
+    <div class="name-box" onclick="showInfo('Ami Shourov. Ami chill guy.')">Shourov</div>
+    <div class="name-box" onclick="showInfo('Ami Vola. Ami valo chele.')">Jakariya</div>
+    <div class="name-box" onclick="showInfo('Ami Phosphoras. Ami periodic table er 15 no ml.')">Sorforas</div>
+    <div class="name-box" onclick="showInfo('Ami Roky. Ami volar sathe theke kharap hoye gechi.')">Roky</div>
+    <div class="name-box" onclick="showInfo('Ami Sakil. Ami valo manus.')">Sakil</div>
+    <div class="name-box" onclick="showInfo('Ami Torun. Aage valo chilam, akhon sakil er sathe theke kharap hoye gechi.')">Torun</div>
+    <div class="name-box" onclick="showInfo('Ami Ariful. Ami Valo manus.')">Ariful</div>
+    <div class="name-box" onclick="showInfo('Ami Roni. Ami valo manus.')">Roni</div>
+    <div class="name-box" onclick="showInfo('Ami hacker Siam. Ami jauro note 8 pro.')">Siam</div>
+    <div class="name-box" onclick="showInfo('Ami Rinku. Ami Rajakar.')">Rinku</div>
+    <div class="name-box" onclick="showInfo('Ami Saikot. Ami Muhib bhai er sathe ghurte ghurte jaura pro max hoye gechi')">Saikot</div>
+    <div class="name-box" onclick="showInfo('Ami Younus. Ami Muhib bhai er pandruu gang er akjon sodosso')">Younus</div>
+  </div>
+
+  <div id="info" class="info-box"></div>
+
+  <script>
+    function showInfo(info) {
+      document.getElementById("info").innerHTML = info;
+    }
+  </script>
+</body>
+</html>
